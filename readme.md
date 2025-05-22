@@ -10,8 +10,9 @@
 <li>Login com email e senha correta</li>
 <li>Login com email e senha incorreta</li>
 <li>Logout</li>
-</ul>
 <hr>
+</ul>
+
 <ul>
 <li>Fazer contato por "Contact us"</li>
 <hr>
