@@ -14,15 +14,12 @@ describe('Testes de login', () => {
 
   beforeEach(() => {
     cy.visit('https://automationexercise.com/')
+
+    // Iniciando com a verificação se está na página correta
+    cy.verificacaoDaPagina()
   })
 
   it('Registrar um novo usuário', () => {
-
-    // Iniciando com a verificação da página correta para o registro
-    cy.get('a[href="/login"]')
-      .should('be.visible')
-      .click()
-    cy.url().should('include', '/login')
 
     // Inicio do processo para registro do usuário
     cy.get('[data-qa="signup-name"]').type(nomeCompleto)
@@ -54,14 +51,47 @@ describe('Testes de login', () => {
   })
 
   it('Login com email e senha correta', () => {
-    cy.get('a[href="/login"]')
-      .should('be.visible')
-      .click()
+
+    // Preenchendo os dados necessarios
+    cy.login(email, senha)
+  })
+
+  it('Logout da conta', () => {
+
+    // Preenchendo os dados necessarios
+    cy.login(email, senha)
+
+    // Verificar botão de logout e fazer o logout
+    cy.get('a[href="/logout"]').should('be.visible').click()
+
+    // Verificação se o logout foi concluído
     cy.url().should('include', '/login')
 
-    cy.get('[data-qa="login-email"]').type(email)
-    cy.get('[data-qa="login-password"]').type(senha)
-    cy.get('[data-qa="login-button"]').click()
+  })
+
+  it('Deletar conta', () => {
+
+    // Preenchendo os dados necessarios
+    cy.login(email, senha)
+
+    // Verificar botão deletar e fazer o click
+    cy.get('a[href="/delete_account"]')
+      .should('be.visible')
+      .click()
+
+    // Verificação se a exclusão foi concluído
+    cy.url().should('include', '/delete_account')
+  });
+
+  it('Login com email e senha incorreta', () => {
+
+    // Preenchendo com dados incorretos
+    cy.login("email.br", "123456")
+
+    // Verificar se o campo do email foi considerado inválido
+    cy.get('input[type="email"]').then(($input) => {
+      expect($input[0].checkValidity()).to.be.false;
+    });
 
   });
 
