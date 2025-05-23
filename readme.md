@@ -9,6 +9,7 @@
 <li>Registrar um novo usuário</li>
 <li>Login com email e senha correta</li>
 <li>Logout</li>
+<li>Deletar conta</li>
 <li>Login com email e senha incorreta</li>
 <hr>
 </ul>
