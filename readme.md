@@ -8,8 +8,8 @@
 
 <li>Registrar um novo usuário</li>
 <li>Login com email e senha correta</li>
-<li>Login com email e senha incorreta</li>
 <li>Logout</li>
+<li>Login com email e senha incorreta</li>
 <hr>
 </ul>
 
