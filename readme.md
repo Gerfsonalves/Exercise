@@ -3,6 +3,7 @@
 
 
 ---
+### *Testes de login*
 
 ### ✅ **1. Registrar um novo usuário**
 - Preenche nome e email no formulário de cadastro.
@@ -30,9 +31,9 @@
 - Verifica que o navegador identificou o campo como inválido via `checkValidity()`.
 
 ---
+### *Enviar mensagem para contato*
 
-
-### 📄 **1. Formulário de Contato
+### 📄 **1. Formulário de Contato**
 
 - Acessa a página inicial.
 - Navega até a seção **Contact Us**.
@@ -60,3 +61,21 @@
 <li>Verificar funcionalidade do botão top </li>
 
 </ul>
+
+---
+### ⚙️ **Tecnologias Utilizadas**
+- Cypress
+
+- Faker.js
+
+- cypress-file-upload
+
+- GitHub Actions
+
+---
+
+### **👨‍💻 Autor**
+
+`Gerfson`
+
+`Estudante e QA | Testes Automatizados com Cypress`
