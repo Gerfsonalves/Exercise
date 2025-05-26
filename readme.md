@@ -31,9 +31,18 @@
 
 ---
 
-<ul>
-<li>Fazer contato por "Contact us"</li>
-<hr>
+
+### 📄 **1. Formulário de Contato
+
+- Acessa a página inicial.
+- Navega até a seção **Contact Us**.
+- Preenche o formulário com dados gerados via `faker`.
+- Realiza o upload de um arquivo `.txt` fictício.
+- Submete o formulário e valida a mensagem de sucesso.
+
+---
+
+
 <li>Verificar detalhes de um produto</li>
 <li>Pesquisar um produto</li>
 <hr>
