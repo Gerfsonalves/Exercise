@@ -42,11 +42,12 @@
 - Submete o formulário e valida a mensagem de sucesso.
 
 ---
+### *Pesquisa e informações do produto*
+### 🔍 **1. Pesquisa e detalhes**
+- Pesquisar um produto `específico`.
+- Verificar detalhes do produto pesquisado.
 
-
-<li>Verificar detalhes de um produto</li>
-<li>Pesquisar um produto</li>
-<hr>
+---
 <li>Adicionar produto no carrinho</li>
 <li>Verificar produto no carrinho</li>
 <li>Remover produto do carrinho</li>
